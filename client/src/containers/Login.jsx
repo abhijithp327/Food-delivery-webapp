@@ -4,6 +4,7 @@ import { LoginBg, Logo } from '../assets';
 import { LoginInput } from '../components';
 import { FaEnvelope, FaLock } from '../assets/icons';
 import { motion } from "framer-motion";
+import { buttonClick } from '../animations';
 
 
 
@@ -72,7 +73,7 @@ const Login = () => {
 
           )}
 
-        { !isSignUp ? <p>Doesn't have an account: <motion.button> Create one </motion.button>
+        { !isSignUp ? <p>Doesn't have an account: <motion.button {...buttonClick}> Create one </motion.button>
           </p> : <p></p> }
 
         </div>
