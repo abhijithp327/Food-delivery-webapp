@@ -36,7 +36,7 @@ const Login = () => {
 
         {/* welcome text */}
         <p className='text-3xl font-semibold text-headingColor'>Welcome Back</p>
-        <p className='text-xl text-textColor font-bold -mt-6'>Sign in with following</p>
+        <p className='text-xl text-textColor font-bold -mt-6'>{ isSignUp ? "Sign up" : "Sign in" } with following</p>
 
         {/* input section */}
         <div className='w-full flex flex-col items-center justify-center gap-6 px-4 md:px-12 py-4'>
