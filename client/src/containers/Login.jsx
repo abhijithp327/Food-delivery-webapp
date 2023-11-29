@@ -59,7 +59,7 @@ const Login = () => {
           />
 
 
-          { isSignUp && (
+          {isSignUp && (
 
             <LoginInput
               placeHolder={"Confirm Password Here"}
@@ -73,8 +73,21 @@ const Login = () => {
 
           )}
 
-        { !isSignUp ? <p>Doesn't have an account: <motion.button {...buttonClick}> Create one </motion.button>
-          </p> : <p></p> }
+          {!isSignUp ? (
+            <p>Doesn't have an account: <motion.button className='text-red-600 font-bold underline cursor-pointer bg-transparent'
+            onClick={() => setIsSignUp(true)}
+              {...buttonClick}>
+              Create one </motion.button>
+            </p>
+
+          ) : (
+
+            <p>Already have an account: <motion.button className='text-red-600 font-bold underline cursor-pointer bg-transparent'
+            onClick={() => setIsSignUp(false)}
+              {...buttonClick}>
+              Sign in here </motion.button>
+            </p>
+          )}
 
         </div>
       </div>
