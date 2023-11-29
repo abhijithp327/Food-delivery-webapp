@@ -70,9 +70,10 @@ const Login = () => {
             />
 
 
-          )};
+          )}
 
-        { !isSignUp ? <p>Doesn't have an account: <motion.button whileTap={{scale : 0.95}}></motion.button>  </p> : <p></p> }
+        { !isSignUp ? <p>Doesn't have an account: <motion.button> Create one </motion.button>
+          </p> : <p></p> }
 
         </div>
       </div>
