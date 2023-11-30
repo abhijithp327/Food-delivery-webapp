@@ -8,3 +8,7 @@ export const fadeInOut = {
     animate: { opacity: 1 },
     exit: { opacity: 0 },
 }     
+
+
+
+added all animinations
