@@ -6,6 +6,8 @@ const LoginInput = ({ placeHolder, icon, inputState, inputStateFunc, type, isSig
 
     const [isFocus, setIsFocus] = useState(false);
 
+    
+
     return (
         <motion.div
             { ...fadeInOut }
